@@ -44,4 +44,7 @@ fn main() {
     let (x, y, z) = tup;
     println!("{x}, {z}, {y}");
 
+    //2. array type
+    let a = [1,2,3,4,5];
+    println!("{}", a[2]);
 }
