@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     let _guess: isize = "-42".parse().expect("Not a number!");
 
@@ -51,4 +53,23 @@ fn main() {
     // let a: [i32; 5] = [1,2,3,4,5,6];//causes mismatched types compile time error as the size exceeds
     let _a: [i32; 5] = [1,2,3,4,5];
     let _b: [u32; 10] =  [260; 10]; //the entire array will have value as 260
+
+    let a = [1, 2, 3, 4, 5];
+
+    println!("Please enter an array index.");
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("Index entered was not a number");
+
+    let element = a[index];
+
+    println!("The value of the element at index {index} is: {element}");
 }
