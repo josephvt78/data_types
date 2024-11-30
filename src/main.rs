@@ -36,4 +36,11 @@ fn main() {
     let heart_eyed_cat = '😻';
     println!("{c} {z} {heart_eyed_cat}");
 
+    //Compound Types
+    // 1. The Tuple type
+    let tup: (i32, f64, u8) = (-500, 260.5, 1);
+    println!("{0}, {2}, {1}",tup.0, tup.1, tup.2);
+    let (x, y, z) = tup;
+    println!("{x}, {z}, {y}");
+
 }
