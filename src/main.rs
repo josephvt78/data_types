@@ -47,4 +47,8 @@ fn main() {
     //2. array type
     let a = [1,2,3,4,5];
     println!("{}", a[2]);
+    // let _b = [1, "January"]; //causes mismatched types compile time error
+    // let a: [i32; 5] = [1,2,3,4,5,6];//causes mismatched types compile time error as the size exceeds
+    let _a: [i32; 5] = [1,2,3,4,5];
+    let _b: [u32; 10] =  [260; 10]; //the entire array will have value as 260
 }
