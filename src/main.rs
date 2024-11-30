@@ -25,9 +25,15 @@ fn main() {
     let remainder = 43 % 5;
     println!("Remainder {remainder}");
 
+    //Boolean data type
     let t = true;
     let f: bool = false; //with explicit type annotation
     println!("bool values {}", t | !f); // or &
 
+    //Character Type
+    let c = 'z';
+    let z: char = 'Z'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+    println!("{c} {z} {heart_eyed_cat}");
 
 }
