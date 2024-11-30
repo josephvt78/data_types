@@ -25,4 +25,9 @@ fn main() {
     let remainder = 43 % 5;
     println!("Remainder {remainder}");
 
+    let t = true;
+    let f: bool = false; //with explicit type annotation
+    println!("bool values {}", t | !f); // or &
+
+
 }
